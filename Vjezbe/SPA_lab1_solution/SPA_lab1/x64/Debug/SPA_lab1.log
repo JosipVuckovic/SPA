@@ -1,0 +1,5 @@
+﻿  Source.c
+c:\users\josip vučkoivć\documents\github\spa\vjezbe\spa_lab1_solution\spa_lab1\source.c(112): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\josip vučkoivć\documents\github\spa\vjezbe\spa_lab1_solution\spa_lab1\source.c(128): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+c:\users\josip vučkoivć\documents\github\spa\vjezbe\spa_lab1_solution\spa_lab1\source.c(128): warning C4313: 'printf': '%d' in format string conflicts with argument 1 of type 'int *'
+  SPA_lab1.vcxproj -> C:\Users\Josip Vučkoivć\Documents\GitHub\SPA\Vjezbe\SPA_lab1_solution\x64\Debug\SPA_lab1.exe
