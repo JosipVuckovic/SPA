@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <time.h>
+#include <math.h>
 
 
 void main_menu(void);
@@ -106,7 +107,7 @@ void zadatak_1()
 		printf("Pritisni bilo koju tipku za nastavak...\n");
 		getchar();
 		getchar();
-		zadatak_1();
+		do_you_want_more();
 	}
 	printf("\n**********************************************************************\n");
 	matrica=calloc(dimenzija_matrice,sizeof (int*));
@@ -136,8 +137,8 @@ void zadatak_1()
 		printf("Matrica je najljepsa!");
 	else
 		printf("Matrica nije najljepsa!");
-
 	printf("\n");
+	free(matrica);
 	do_you_want_more();
 }
 
@@ -160,11 +161,11 @@ void zadatak_2()
 	scanf("%d", &korak);
 	if (dimenzija_niza > 10000 || korak>100)
 	{
-		printf("Pogledajte ogranicenja! Ponovite zadatak!\n");
+		printf("Krivi unos! Ponovite zadatak!\n");
 		printf("Pritisni bilo koju tipku za nastavak...\n");
 		getchar();
 		getchar();
-		zadatak_2();
+		do_you_want_more();
 	}
 	niz = calloc(dimenzija_niza, sizeof(int));
 	printf("\n**********************************************************************\n");
@@ -175,17 +176,16 @@ void zadatak_2()
 		printf("  ");
 	}
 	printf("\n**********************************************************************\n");
-	for ( i = 1; i < dimenzija_niza; i++)
+	for ( i = 0; i < dimenzija_niza; i++)
 	{
-		for (j = 0; j < dimenzija_niza; j++)
+		for (j = i; j < dimenzija_niza; j++)
 		{
-			if (niz[j]-niz[i-1]==korak)
-			{
-				koliko_brojeva++;
-			}
+			if (abs(niz[j] - niz[i+1]) == korak)
+			koliko_brojeva++;
 		}
 	}
 	printf("Parova brojeva koji imaju korak: %d je bilo: %d",korak,koliko_brojeva);
 	printf("\n");
+	free(niz);
 	do_you_want_more();
 }
