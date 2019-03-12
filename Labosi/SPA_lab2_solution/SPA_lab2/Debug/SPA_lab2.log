@@ -1,0 +1,3 @@
+﻿  Source.c
+c:\users\korisnik\source\github\spa\labosi\spa_lab2_solution\spa_lab2\source.c(163): warning C4305: 'initializing': truncation from 'double' to 'float'
+  SPA_lab2.vcxproj -> C:\Users\Korisnik\source\GitHub\SPA\Labosi\SPA_lab2_solution\Debug\SPA_lab2.exe
