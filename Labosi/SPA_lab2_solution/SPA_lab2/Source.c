@@ -68,12 +68,12 @@ void do_you_want_more(void)
 		main_menu();
 		break;
 	case 'n':
-		printf("\nHvala na koriötenju\n");
+		printf("\nHvala na kori≈°tenju\n");
 		printf("pritisnite bilo koju tipku za izlaz\n");
 		getchar();
 		break;
 	case 'N':
-		printf("\nHvala na koriötenju\n");
+		printf("\nHvala na kori≈°tenju\n");
 		printf("pritisnite bilo koju tipku za izlaz\n");
 		getchar();
 		break;
@@ -166,8 +166,7 @@ void zadatak_1()
 	printf("\n");
 	printf("Unesite koliko elemenata zelite: ");
 	scanf("%d", &br_elemenata);
-	br_elemenata = (sizeof(uneseni_niz) / sizeof(uneseni_niz[0]));
-	printf("**********************************************************************\n");
+	printf("\n**********************************************************************\n");
 	uneseni_niz = (float*)calloc(br_elemenata, sizeof(float));
 	for (int i = 0; i < br_elemenata; i++)
 	{
