@@ -1,0 +1,21 @@
+﻿  Source.c
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(115): warning C4047: 'initializing': 'stack_element_t' differs in levels of indirection from 'void *'
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(227): warning C4047: 'return': 'queue_element_t' differs in levels of indirection from 'int'
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(262): warning C4047: 'function': 'queue_element_t' differs in levels of indirection from 'int'
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(262): warning C4024: 'queue_enqueue': different types for formal and actual parameter 2
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(263): warning C4047: 'function': 'queue_element_t' differs in levels of indirection from 'int'
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(263): warning C4024: 'queue_enqueue': different types for formal and actual parameter 2
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(264): warning C4047: 'function': 'queue_element_t' differs in levels of indirection from 'int'
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(264): warning C4024: 'queue_enqueue': different types for formal and actual parameter 2
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(265): warning C4047: 'function': 'queue_element_t' differs in levels of indirection from 'int'
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(265): warning C4024: 'queue_enqueue': different types for formal and actual parameter 2
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(266): warning C4047: 'function': 'queue_element_t' differs in levels of indirection from 'int'
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(266): warning C4024: 'queue_enqueue': different types for formal and actual parameter 2
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(267): warning C4047: 'function': 'queue_element_t' differs in levels of indirection from 'int'
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(267): warning C4024: 'queue_enqueue': different types for formal and actual parameter 2
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(268): warning C4047: 'function': 'queue_element_t' differs in levels of indirection from 'int'
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(268): warning C4024: 'queue_enqueue': different types for formal and actual parameter 2
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(275): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'queue_element_t'
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(281): warning C4047: 'initializing': 'stack_element_t' differs in levels of indirection from 'void *'
+c:\users\korisnik\source\github\spa\labosi\spa_lab4_solution\spa_lab4\source.c(319): warning C4047: 'initializing': 'stack_element_t' differs in levels of indirection from 'void *'
+  SPA_lab4.vcxproj -> C:\Users\Korisnik\source\GitHub\SPA\Labosi\SPA_lab4_Solution\Debug\SPA_lab4.exe
