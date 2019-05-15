@@ -1,0 +1,8 @@
+﻿  Source.c
+c:\users\korisnik\source\github\spa\labosi\spa_lab6_solution\spa_lab6\source.c(100): warning C4028: formal parameter 1 different from declaration
+c:\users\korisnik\source\github\spa\labosi\spa_lab6_solution\spa_lab6\source.c(100): warning C4028: formal parameter 2 different from declaration
+c:\users\korisnik\source\github\spa\labosi\spa_lab6_solution\spa_lab6\source.c(101): warning C4018: '<': signed/unsigned mismatch
+c:\users\korisnik\source\github\spa\labosi\spa_lab6_solution\spa_lab6\source.c(126): warning C4028: formal parameter 1 different from declaration
+c:\users\korisnik\source\github\spa\labosi\spa_lab6_solution\spa_lab6\source.c(126): warning C4028: formal parameter 2 different from declaration
+c:\users\korisnik\source\github\spa\labosi\spa_lab6_solution\spa_lab6\source.c(127): warning C4018: '<': signed/unsigned mismatch
+  Spa_lab6.vcxproj -> C:\Users\Korisnik\source\GitHub\SPA\Labosi\Spa_lab6_Solution\Debug\Spa_lab6.exe
