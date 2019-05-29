@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <string.h>
+#include <limits.h>
 #include "queue.h"
 
 // M x N matrix
@@ -120,16 +121,18 @@ void BFS(int mat[][N], int i, int j, int x, int y)
 {
 	// construct a matrix to keep track of visited cells
 	int visited[M][N];
-
+	
 	// initially all cells are unvisited
-	memset(visited, -1, sizeof visited);
+	memset(visited, 0, sizeof visited);
 
 	// create an empty queue
-	queue_t q;
+	queue_t q= queue_new();
+
 
 	// mark source cell as visited and enqueue the source node
-	visited[i][j] = -1;
-	queue_enqueue(q, i, j, 0);
+	visited[i][j] = 0;
+	queue_element_t tmp = {0,0,0};
+	queue_enqueue(q, tmp);
 	/*q.push({ i, j, 0 });*/
 
 	// stores length of longest path from source to destination
@@ -139,8 +142,10 @@ void BFS(int mat[][N], int i, int j, int x, int y)
 	while (!queue_is_empty(q))
 	{
 		// pop front node from queue and process it
-		Node node = q.front();
-		q.pop();
+		/*struct Node node = q.front();*/
+		struct Node node = queue_front(q);
+		//q.pop();
+		queue_dequeue(q);
 
 		// (i, j) represents current cell and dist stores its
 		// minimum distance from the source
@@ -162,8 +167,9 @@ void BFS(int mat[][N], int i, int j, int x, int y)
 			if (isValid(mat, visited, i + row[k], j + col[k]))
 			{
 				// mark next cell as visited and enqueue it
-				visited[i + row[k]][j + col[k]] = true;
-				q.push({ i + row[k], j + col[k], dist + 1 });
+				visited[i + row[k]][j + col[k]] = 1;
+				//q.push({ i + row[k], j + col[k], dist + 1 });
+				queue_enqueue( i + row[k], j + col[k], dist + 1 );
 			}
 		}
 	}
@@ -180,6 +186,30 @@ void BFS(int mat[][N], int i, int j, int x, int y)
 
 int main()
 {
+	struct Point pocetak = { 0, 0};
+	struct Point  kraj = { 3, 4 };
+	int mat[M][N] =
+	{
+		{ 1, 0, 1, 1, 1, 1, 0, 1, 1, 1 },
+	{ 1, 0, 1, 0, 1, 1, 1, 0, 1, 1 },
+	{ 1, 1, 1, 0, 1, 1, 0, 1, 0, 1 },
+	{ 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 },
+	{ 1, 1, 1, 0, 1, 1, 1, 0, 1, 0 },
+	{ 1, 0, 1, 1, 1, 1, 0, 1, 0, 0 },
+	{ 1, 0, 0, 0, 0, 0, 0, 0, 0, 1 },
+	{ 1, 0, 1, 1, 1, 1, 0, 1, 1, 1 },
+	{ 1, 1, 0, 0, 0, 0, 1, 0, 0, 1 }
+	};
+
 	
+
+	int dist = BFS(mat, source, dest);
+
+	/*if (dist != INT_MAX)
+		cout << "Shortest Path is " << dist;
+	else
+		cout << "Shortest Path doesn't exist";*/
+
+	return 0;
 
 }

@@ -1,5 +1,6 @@
 /* Implementacija sucelja ATP reda dvostruko povezanom listom. */
 
+//#include <stdlib.h>
 #include <stdlib.h>
 #include "queue.h"
 

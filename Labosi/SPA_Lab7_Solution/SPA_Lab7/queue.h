@@ -2,7 +2,7 @@
 
 #define QUEUE_H_INCLUDED
 
-typedef char queue_element_t;
+typedef struct Node queue_element_t;
 typedef struct queue_tag *queue_t;
 
 queue_t queue_new();									/* stvara novi (prazni) red */
