@@ -186,8 +186,8 @@ void BFS(int mat[][N], int i, int j, int x, int y)
 
 int main()
 {
-	struct Point pocetak = { 0, 0};
-	struct Point  kraj = { 3, 4 };
+	struct Node pocetak = { 0, 0};
+	struct Node  kraj = { 3, 4 };
 	int mat[M][N] =
 	{
 		{ 1, 0, 1, 1, 1, 1, 0, 1, 1, 1 },
