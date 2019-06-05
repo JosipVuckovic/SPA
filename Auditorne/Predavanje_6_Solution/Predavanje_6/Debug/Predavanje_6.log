@@ -1,0 +1,6 @@
+﻿  Source.c
+c:\users\korisnik\source\github\spa\auditorne\predavanje_6_solution\predavanje_6\source.c(15): warning C4047: 'function': 'stack_t' differs in levels of indirection from 'stack_element_t'
+c:\users\korisnik\source\github\spa\auditorne\predavanje_6_solution\predavanje_6\source.c(15): warning C4024: 'stack_push': different types for formal and actual parameter 1
+c:\users\korisnik\source\github\spa\auditorne\predavanje_6_solution\predavanje_6\source.c(15): warning C4047: 'function': 'stack_element_t' differs in levels of indirection from 'stack_t'
+c:\users\korisnik\source\github\spa\auditorne\predavanje_6_solution\predavanje_6\source.c(15): warning C4024: 'stack_push': different types for formal and actual parameter 2
+  Predavanje_6.vcxproj -> C:\Users\Korisnik\source\GitHub\SPA\Auditorne\Predavanje_6_Solution\Debug\Predavanje_6.exe

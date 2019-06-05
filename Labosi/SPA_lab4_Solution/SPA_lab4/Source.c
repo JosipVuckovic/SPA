@@ -157,7 +157,8 @@ int pojavljivanje_druge(list_t prva_lista, list_t druga_lista)
 {
 	list_iterator_t iterator_prva = list_iterator(prva_lista);
 	list_iterator_t iterator_druga = list_iterator(druga_lista);
-	int i=0, j = 0;
+	list_element_t tmp = NULL;
+	int i=0,j=0;
 	while (list_iterator_is_valid(iterator_prva))
 	{
 		if (list_get(iterator_prva) == list_get(iterator_druga))
@@ -168,7 +169,7 @@ int pojavljivanje_druge(list_t prva_lista, list_t druga_lista)
 			{
 				i++;
 				list_iterator_next(iterator_prva);
-				continue;
+								
 			}
 			else
 			{
@@ -181,9 +182,11 @@ int pojavljivanje_druge(list_t prva_lista, list_t druga_lista)
 		{
 			j=0;
 			iterator_druga=list_iterator(druga_lista);
+			
+
 		}
-		i++;
 		list_iterator_next(iterator_prva);
+		i++;
 		
 	}
 	list_iterator_delete(iterator_prva);
@@ -198,18 +201,18 @@ void zadatak_2(void)
 	list_add(prva_lista,0);
 	list_add(prva_lista,3);
 	list_add(prva_lista,-1);
-	list_add(prva_lista,1);
+	list_add(prva_lista,-1);
 	list_add(prva_lista,3);
 	list_add(prva_lista,-1);
 	list_add(prva_lista,5);
-	list_add(prva_lista,9);
+	list_add(prva_lista,3);
+	list_add(prva_lista,-1);
 	list_add(prva_lista,7);
-	list_add(prva_lista,8);
 	list_add(prva_lista,9);
 	/*3, -1, 5*/
+	list_add(druga_lista,-1);
 	list_add(druga_lista,3);
 	list_add(druga_lista,-1);
-	list_add(druga_lista,5);
 	system("cls");
 	printf("**********************************************************************\n");
 	printf("*                        Zadatak 2                                   *\n");
